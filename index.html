@@ -15,7 +15,7 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travelville</title>
+  <title>Book Trader - A book exchange service</title>
 
 </head>
 
@@ -31,10 +31,10 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#home" id="">Home</a></li>
-            <li><a href="#search" id="">Search</a></li>
             <li><a href="#popular" id="">Popular</a></li>
-            <li><a href="#gallery" id="">Gallery</a></li>
-            <li><a href="#contact" id="">Contact</a></li>
+            <li><a href="#login" id="">Login</a></li>
+            <li><a href="#register" id="">Register</a></li>
+            <li><a href="#about" id="">About</a></li>
           </ul>
         </div>
       </div>
@@ -54,39 +54,27 @@
       <li>
         <img src="img/books1.jpg">
         <div class="caption center-align">
-          <h2>Take Your Dream Vacation</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cum recusandae fugit ex tempore mollitia modi esse repellat, pariatur repellendus.</h5>
+          <h2>Exchange Old Books</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">When you finish reading a book, don't just leave it on the shelf. Swap it for another.</h5>
         </div>
       </li>
       <li>
         <img src="img/books2.jpg">
         <div class="caption left-align">
-          <h2>We Work With All Budgets</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quibusdam excepturi maxime porro eveniet. Sint qui expedita repellendus laboriosam quod?</h5>
+          <h2>The More The Merrier</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">The more people there are in the book exchange, the better. Invite your friends to join.</h5>
         </div>
       </li>
       <li>
         <img src="img/books3.jpg">
         <div class="caption right-align">
-          <h2>Group &amp; individual getaways</h2>
-          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, sequi. Maxime numquam dolores, asperiores! Soluta, provident architecto totam magnam?</h5>
+          <h2>Find Like Minded People</h2>
+          <h5 class="light grey-text text-lighten-3">Leave comments and ratings about your books. Start a discussion.</h5>
         </div>
       </li>
     </ul>
   </section>
 
-  <section class="section section-search brown lighten-3 white-text center scrollspy" id="search">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h3>Search Books</h3>
-          <div class="input-field">
-            <input type="text" class="white blue-grey-text autocomplete" id="autocomplete-input" placeholder="Aruba, Cancun, etc..">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!--  -->
   <section class="section section-icons grey lighten-4 center">
@@ -97,7 +85,7 @@
             <i class="material-icons large brown-text">
               import_contacts
             </i>
-            <h4>Top Sellers</h4>
+            <h4>How it works</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, fugiat.</p>
           </div>
         </div>
@@ -106,7 +94,7 @@
             <i class="material-icons large brown-text">
               swap_calls
             </i>
-            <h4>Swap Books</h4>
+            <h4>Get involved</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, fugiat.</p>
           </div>
         </div>
@@ -115,7 +103,7 @@
             <i class="material-icons large brown-text">
               library_books
             </i>
-            <h4>View Library</h4>
+            <h4>Get reading</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, fugiat.</p>
           </div>
         </div>
@@ -126,7 +114,7 @@
   <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
-        <h4 class="center"><span class="brown-text">Popular</span> Books</h4>
+        <h4 class="center"><span class="brown-text">Popular</span> places to read books</h4>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
@@ -164,20 +152,7 @@
     </div>
   </section>
 
-  <section class="section section-follow brown lighten-3 white-text center">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h4 class="white-text text-lighten-3">Follow Us</h4>
-          <p>Follow us on social media for special offers</p>
-          <a href="#" class="white-text text-darken-1"><i class="fab fa-facebook fa-3x"></i></a>
-          <a href="#" class="white-text text-darken-1"><i class="fab fa-twitter fa-3x"></i></a>
-          <a href="#" class="white-text text-darken-1"><i class="fab fa-instagram fa-3x"></i></a>
-          <a href="#" class="white-text text-darken-1"><i class="fab fa-linkedin fa-3x"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
@@ -231,14 +206,26 @@
     </div>
   </section>
 
-  <section id="contact" class="section section-contact scrollspy">
+  <section class="section section-search brown lighten-3 white-text center scrollspy" id="search">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search (with autocomplete) Books</h3>
+          <div class="input-field">
+            <input type="text" class="white blue-grey-text autocomplete" id="autocomplete-input" placeholder="Aruba, Cancun, etc..">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section section-contact scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
           <div class="card-panel teal lighten-3 white-text text-darken-3 center">
             <i class="material-icons">email</i>
-            <h5>Contact Us to build apps</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit quam iste assumenda quidem praesentium, modi mollitia minus ratione placeat.</p>
+            <h5>About Us to build apps</h5>
+            <p>We are a small team of developers learning the newest technologies through FCC etc etc.</p>
           </div>
           <ul class="collection with-header">
             <li class="collection-header">
@@ -263,6 +250,20 @@
               <label for="textarea1">Message</label>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-follow brown lighten-3 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="white-text text-lighten-3">Follow Us</h4>
+          <p>Follow us on social media for special offers</p>
+          <a href="#" class="white-text text-darken-1"><i class="fab fa-facebook fa-3x"></i></a>
+          <a href="#" class="white-text text-darken-1"><i class="fab fa-twitter fa-3x"></i></a>
+          <a href="#" class="white-text text-darken-1"><i class="fab fa-instagram fa-3x"></i></a>
+          <a href="#" class="white-text text-darken-1"><i class="fab fa-linkedin fa-3x"></i></a>
         </div>
       </div>
     </div>
