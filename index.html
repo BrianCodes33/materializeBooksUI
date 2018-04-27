@@ -7,7 +7,8 @@
   <!--Import materialize.css-->
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Compiled and minified JavaScript -->
@@ -30,11 +31,9 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#home" id="">Home</a></li>
-            <li><a href="#popular" id="">Popular</a></li>
-            <li><a href="#login" id="">Login</a></li>
-            <li><a href="#register" id="">Register</a></li>
-            <li><a href="#about" id="">About</a></li>
+            <li><a class="modal-trigger" href="#modal1">Login</a></li>
+            <li><a href="register.html" id="">Register</a></li>
+            <li><a href="#about" id="">Profile</a></li>
           </ul>
         </div>
       </div>
@@ -86,7 +85,7 @@
               import_contacts
             </i>
             <h4>How it works</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, fugiat.</p>
+            <p>Register to start trading your books with other users in your area.</p>
           </div>
         </div>
         <div class="col s12 m4">
@@ -95,7 +94,7 @@
               swap_calls
             </i>
             <h4>Get involved</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, fugiat.</p>
+            <p>Be part of a growing community of avid readers. Start connecting.</p>
           </div>
         </div>
         <div class="col s12 m4">
@@ -104,7 +103,7 @@
               library_books
             </i>
             <h4>Get reading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, fugiat.</p>
+            <p>Improve your knowledge. Reduce stress. Stimulate your brain.</p>
           </div>
         </div>
       </div>
@@ -114,7 +113,7 @@
   <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
-        <h4 class="center"><span class="brown-text">Popular</span> places to read books</h4>
+        <h4 class="center"><span class="brown-text">Newest</span> additions</h4>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
@@ -223,18 +222,14 @@
       <div class="row">
         <div class="col s12 m6">
           <div class="card-panel teal lighten-3 white-text text-darken-3 center">
-            <i class="material-icons">email</i>
-            <h5>About Us to build apps</h5>
-            <p>We are a small team of developers learning the newest technologies through FCC etc etc.</p>
+            <h5>About Us</h5>
+            <hr>
+            <p>We are a small team of developers learning the newest technologies through FCC(Free Code Camp). This project
+              was build with VueJS on the front end and NodeJS on the backend.</p>
+            <p>Our passion for technology and reading inspired us to create this project. If you have any questions about building
+              apps for your business, please don't hesitate to get in touch.</p>
+            <p>Fill out our form. We want to hear from you!</p>
           </div>
-          <ul class="collection with-header">
-            <li class="collection-header">
-              <h4>Location</h4>
-            </li>
-            <li class="collection-item">JBM Agency</li>
-            <li class="collection-item">555 Leeds Rd, UK</li>
-            <li class="collection-item">England rocks</li>
-          </ul>
         </div>
         <div class="col s12 m6">
           <div class="card-panel grey lighten-3">
@@ -269,6 +264,31 @@
     </div>
   </section>
 
+  <!--modal test-->
+  <a class="modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            
+            <label for="username">Username</label>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+          </div>
+          <div class="input-field col s12">
+            
+            <label for="username">Password</label>
+            <input type="Password" id="autocomplete-input" class="autocomplete">
+          </div>
+        </div>
+        <a class="waves-effect waves-light btn">Login</a>
+      </div>
+    </div>
+
+  </div>
+
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
@@ -277,7 +297,7 @@
     const slider = document.querySelector('.slider');
     M.Slider.init(slider, {
       indicators: false,
-      height: 500,
+      height: 300,
       transition: 500,
       interval: 6000
     })
@@ -295,6 +315,11 @@
     })
     const mb = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(mb, {})
+
+    var elem = document.querySelector('.modal');
+    var instance = M.Modal.init(elem, {
+      opacity: 0.7
+    });
   </script>
 
 </body>
